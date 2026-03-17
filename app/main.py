@@ -19,3 +19,8 @@ def health_check():
         "status": "healthy",
         "version": "1.0.0",
     }
+
+
+@app.get("/info")
+def info():
+    return {"session": "S9", "topic": "DevOps & CI/CD"}
